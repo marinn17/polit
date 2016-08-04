@@ -277,6 +277,7 @@ ul {list-style-type: none;}
       <div class="thumbnail">
         <img src="bill.jpg" alt="Bills" width="400" height="300">
         <a href=http://www.thisnation.com/question/051.html>How does the electoral college work?</a>
+        
       </div>
     </div>
     <div class="col-sm-4">
@@ -328,10 +329,10 @@ ul {list-style-type: none;}
 <div id="googleMap" style="height:400px;width:100%;"></div>
 
 <!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdz1mmfVHHBGrw1QQtDCG3UXXil6EsX9U&callback=initMap"></script>
 <script>
 var myCenter = new google.maps.LatLng(38.896908,-77.035386);
-function initMap() {
+function initialize() {
 var mapProp = {
   center:myCenter,
   zoom:12,
@@ -347,9 +348,6 @@ marker.setMap(map);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWr0t_zDazI3nQ6bYMRZoAVwSxcLl-lSI&callback=initMap">
-    </script>
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
