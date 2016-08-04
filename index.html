@@ -1,8 +1,169 @@
-<html>
+<html lang="en">
 <head>
-	<title></title>
+  
+	<script src="polit.js"></script>
+	<meta charset="utf-8">
+<!-- voter stats head -->
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+ rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <!-- end fonts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Politicious</title>
+  <link rel="stylesheet" type="text/css" href="politicswebsite.css">
+
+<style>
+  p.dotted {border-style: dotted;}
+</style>
 </head>
 <body>
-	<A HREF="https://www.google.com">ifnsdjkf</A>
+
+<!-- This is for the navbar -->
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="politicswebsite.html">Politicious</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="politicswebsite.html">Home</a></li>
+      <li><a href="newcongressapi.html">Congress</a></li>
+      <li><a href="newdatesanddeadlines.html">Important Dates</a></li> 
+      <li><a href="bills.html">Bills</a></li>
+      <li><a href="upcomingevents.html">Upcoming Events</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Voters
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="young.html">Young voters</a></li>
+          <li><a href="votinglaws.html">Voting information</a></li>
+        </ul>
+        <li><a href="howto.html">Contacting Politicians</a></li>  
+      </div>
+    </ul>
+    <!-- <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul> -->
+  </div>
+</nav>
+<!-- End of nav bar -->
+ <!-- header -->
+
+<video autoplay loop poster="flag.jpg" id="bgvid" >
+  <source src="flag.mp4" type="video/mp4">
+</video>
+  <div class="overlay">
+    <h1> Want to get involved? We can help. </h1>
+  </div>
+
+<div class="container-fluid">
+		<h2 style="margin-top: 0cm;">Our mission</h2>
+    <p>We are three high school girls who got involved in computer science after attending the Girls Who Code Summer Immersion Program in the summer of 2016. Our mission is to provide an accessible way for people to learn about the politics and laws that affect their everyday lives, without any bias or hidden political influence. Politics isn’t just for tycoons in Washington— it starts with people like us, and it’s time for us to be heard.</p>
+    <br><br><br>
+</div>
+
+<!-- <div class="container-fluid">
+    <h3 style="margin-top: 0cm;">The Creators Behind Politicious</h3>
+    <br><br>
+</div> -->
+
+<!-- end of header -->
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:auto;margin-right:auto;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> Voter Statistics</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-third">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>323,730,000</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Number of US Citizens</h4>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>218,959,000</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Number of Eligible Voters</h4>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>126,144,000</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Total Votes Cast in 2012</h4>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+
+      <img class="infographic" src="statistics.png" style="width:70%;height:auto" alt="Statistics">
+      </div>
+
+      <div class="w3-container">
+    <h5 class="turnout">State Turnout</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td>Minnesota</td>
+        <td>74.5%</td>
+      </tr>
+      <tr>
+        <td>Wisconsin</td>
+        <td>73.0%</td>
+      </tr>
+      <tr>
+        <td>Maine</td>
+        <td>70.8%</td>
+      </tr>
+      <tr>
+        <td>New Hampshire</td>
+        <td>69.8%</td>
+      </tr>
+      <tr>
+        <td>Iowa</td>
+        <td>69.6%</td>
+      </tr>
+      <tr>
+        <td>Oregon</td>
+        <td>69.1%</td>
+      </tr>
+    </table><br>
+    <a href="https://www.washingtonpost.com/blogs/the-fix/files/2013/03/chart34.jpg"><button class="w3-btn"> More States <i class="fa fa-arrow-right"></i></button></a>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h6>Politicious</h6>
+  </footer>
+
+  <!-- End page content -->
+
+
+</div>
+
 </body>
 </html>
